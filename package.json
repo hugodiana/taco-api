@@ -13,7 +13,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "dev:docker": "docker-compose -f ./apps/api/docker-compose.yml up",
-    "start": "turbo start",
+    "start": "astro dev --host 0.0.0.0 --port $PORT",
     "lint": "turbo lint",
     "lint:ci": "turbo lint:ci",
     "db:generate": "turbo db:generate",
